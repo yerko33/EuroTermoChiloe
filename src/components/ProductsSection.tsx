@@ -56,7 +56,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectWindow
             return (
               <article
                 key={product.id}
-                className="flex flex-col justify-between bg-white border border-[#1E1B18]/12 rounded-xl overflow-hidden hover:border-[#145A36]/50 transition-colors"
+                className="flex flex-col justify-between bg-white border border-[#1E1B18]/12 rounded-xl overflow-hidden hover:border-[#8C4325]/60 transition-colors"
               >
                 <div>
                   <div className="aspect-[4/3] w-full bg-[#E8F5E9]/50 overflow-hidden border-b border-[#1E1B18]/10">
@@ -89,7 +89,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectWindow
                   <button
                     type="button"
                     onClick={() => onSelectWindowType(product.id)}
-                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-[#145A36]/30 text-[#145A36] hover:bg-[#145A36] hover:text-white text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#145A36]"
+                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-[#8C4325]/45 text-[#8C4325] hover:bg-[#8C4325] hover:text-white text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8C4325]"
                   >
                     <SlidersHorizontal className="w-4 h-4 shrink-0" aria-hidden="true" />
                     <span>Configurar en visualizador</span>

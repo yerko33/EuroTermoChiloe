@@ -57,7 +57,7 @@ export const FaqSection: React.FC = () => {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="py-16 md:py-24 bg-[#E8F5E9]/35 border-t border-[#145A36]/10"
+      className="py-16 md:py-24 bg-[#E8F5E9]/45 border-t border-[#8C4325]/15"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
@@ -85,11 +85,11 @@ export const FaqSection: React.FC = () => {
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => toggleItem(item.id)}
-                    className="w-full flex items-center justify-between gap-4 text-left py-1 text-base sm:text-lg font-semibold text-[#1E1B18] hover:text-[#145A36] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#145A36]"
+                    className="w-full flex items-center justify-between gap-4 text-left py-1 text-base sm:text-lg font-semibold text-[#1E1B18] hover:text-[#8C4325] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8C4325]"
                   >
                     <span>{item.question}</span>
                     <ChevronDown
-                      className={`w-5 h-5 shrink-0 text-[#145A36] transition-transform duration-200 ${
+                      className={`w-5 h-5 shrink-0 text-[#8C4325] transition-transform duration-200 ${
                         isOpen ? 'rotate-180' : ''
                       }`}
                       aria-hidden="true"

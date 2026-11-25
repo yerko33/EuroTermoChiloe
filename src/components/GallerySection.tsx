@@ -103,7 +103,7 @@ export const GallerySection: React.FC = () => {
     <section
       id="galeria"
       aria-labelledby="galeria-heading"
-      className="py-16 md:py-24 bg-[#E8F5E9]/35 border-t border-[#145A36]/10"
+      className="py-16 md:py-24 bg-[#FBF7F4] border-t border-[#8C4325]/15"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
@@ -135,10 +135,10 @@ export const GallerySection: React.FC = () => {
                   type="button"
                   aria-pressed={active}
                   onClick={() => setActiveCategory(filter.id)}
-                  className={`px-3 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#145A36] ${
+                  className={`px-3 py-1.5 rounded-md text-xs sm:text-sm font-medium transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8C4325] ${
                     active
-                      ? 'bg-[#145A36] text-white'
-                      : 'text-[#1E1B18]/75 hover:text-[#1E1B18] hover:bg-[#E8F5E9]'
+                      ? 'bg-[#8C4325] text-white'
+                      : 'text-[#1E1B18]/75 hover:text-[#8C4325] hover:bg-[#FBF7F4]'
                   }`}
                 >
                   {filter.label}
@@ -156,7 +156,7 @@ export const GallerySection: React.FC = () => {
             return (
               <figure
                 key={slot.id}
-                className={`bg-white border border-[#1E1B18]/12 rounded-xl overflow-hidden flex flex-col justify-between ${
+                className={`bg-white border border-[#8C4325]/15 rounded-xl overflow-hidden flex flex-col justify-between ${
                   activeCategory === 'todos' ? slot.aspectClass : ''
                 }`}
               >

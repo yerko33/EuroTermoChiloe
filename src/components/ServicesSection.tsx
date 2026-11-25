@@ -59,7 +59,7 @@ export const ServicesSection: React.FC = () => {
           </div>
 
           {/* Numbered Services List */}
-          <div className="lg:col-span-7 divide-y divide-[#1E1B18]/12 border-y border-[#1E1B18]/12">
+          <div className="lg:col-span-7 divide-y divide-[#8C4325]/20 border-y border-[#8C4325]/20">
             {SERVICES.map((service) => (
               <div
                 key={service.number}

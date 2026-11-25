@@ -16,7 +16,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#1E1B18]/10">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#8C4325]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4 lg:gap-8">
         {/* Zone 1: Brand Logo */}
         <a

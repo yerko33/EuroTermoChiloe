@@ -45,11 +45,11 @@ export const WindowVisualizer: React.FC<WindowVisualizerProps> = ({
     <section
       id="visualizador"
       aria-labelledby="visualizador-heading"
-      className="py-16 md:py-24 bg-[#E8F5E9]/45 border-y border-[#145A36]/10"
+      className="py-16 md:py-24 bg-[#E8F5E9]/50 border-y border-[#8C4325]/15"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-10 md:mb-12">
-          <p className="text-sm font-medium text-[#145A36] mb-2">
+          <p className="text-sm font-medium text-[#8C4325] mb-2">
             Visualizador 2D referencial
           </p>
           <h2
@@ -168,10 +168,10 @@ export const WindowVisualizer: React.FC<WindowVisualizerProps> = ({
                       type="button"
                       aria-pressed={selected}
                       onClick={() => onChange({ ...config, windowType: option.id })}
-                      className={`px-3.5 py-2.5 text-left rounded-lg border text-sm font-medium transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#145A36] ${
+                      className={`px-3.5 py-2.5 text-left rounded-lg border text-sm font-medium transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8C4325] ${
                         selected
-                          ? 'bg-[#145A36] border-[#145A36] text-white'
-                          : 'bg-white border-[#1E1B18]/15 text-[#1E1B18] hover:border-[#1B7547] hover:bg-[#E8F5E9]/50'
+                          ? 'bg-[#8C4325] border-[#8C4325] text-white'
+                          : 'bg-white border-[#1E1B18]/15 text-[#1E1B18] hover:border-[#8C4325] hover:bg-[#FBF7F4]'
                       }`}
                     >
                       {option.label}
@@ -218,7 +218,7 @@ export const WindowVisualizer: React.FC<WindowVisualizerProps> = ({
                   step={VISUALIZER_BOUNDS.stepCm}
                   value={config.widthCm}
                   onChange={(e) => handleDimensionInput('widthCm', e.target.value)}
-                  className="w-full accent-[#145A36] cursor-pointer"
+                  className="w-full accent-[#8C4325] cursor-pointer"
                 />
                 <div className="flex justify-between text-[11px] text-[#1E1B18]/55 tabular-nums">
                   <span>{VISUALIZER_BOUNDS.minWidthCm} cm</span>
@@ -254,7 +254,7 @@ export const WindowVisualizer: React.FC<WindowVisualizerProps> = ({
                   step={VISUALIZER_BOUNDS.stepCm}
                   value={config.heightCm}
                   onChange={(e) => handleDimensionInput('heightCm', e.target.value)}
-                  className="w-full accent-[#145A36] cursor-pointer"
+                  className="w-full accent-[#8C4325] cursor-pointer"
                 />
                 <div className="flex justify-between text-[11px] text-[#1E1B18]/55 tabular-nums">
                   <span>{VISUALIZER_BOUNDS.minHeightCm} cm</span>
@@ -338,7 +338,7 @@ export const WindowVisualizer: React.FC<WindowVisualizerProps> = ({
         <div
           role="note"
           aria-label="Advertencia sobre configuración referencial"
-          className="mt-8 bg-white border border-[#8C4325]/25 rounded-xl p-4 sm:p-5 flex items-start gap-3"
+          className="mt-8 bg-[#FBF7F4] border border-[#8C4325]/30 rounded-xl p-4 sm:p-5 flex items-start gap-3"
         >
           <Info className="w-5 h-5 text-[#8C4325] shrink-0 mt-0.5" aria-hidden="true" />
           <p className="text-xs sm:text-sm text-[#1E1B18]/85 leading-relaxed">

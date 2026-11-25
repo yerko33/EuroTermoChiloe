@@ -5,9 +5,9 @@ export const Footer: React.FC = () => {
   const whatsappUrl = buildWhatsAppUrl(HERO_WHATSAPP_MESSAGE);
 
   return (
-    <footer className="bg-white border-t border-[#1E1B18]/12 py-12 md:py-14">
+    <footer className="bg-[#FBF7F4] border-t border-[#8C4325]/25 py-12 md:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-[#1E1B18]/10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-[#8C4325]/15">
           {/* Brand Summary */}
           <div className="md:col-span-5 space-y-3">
             <img
@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
               className="h-10 w-auto object-contain"
               referrerPolicy="no-referrer"
             />
-            <p className="text-sm font-bold text-[#1E1B18] pt-1">{BUSINESS_INFO.name}</p>
+            <p className="text-sm font-bold text-[#8C4325] pt-1">{BUSINESS_INFO.name}</p>
             <p className="text-sm text-[#1E1B18]/75 max-w-sm leading-relaxed">
               Fabricación, instalación y reparación de ventanas de PVC a medida en Castro y toda la
               isla de Chiloé.
@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
               Correo:{' '}
               <a
                 href={`mailto:${BUSINESS_INFO.email}`}
-                className="font-semibold text-[#1E1B18] hover:text-[#145A36] hover:underline"
+                className="font-semibold text-[#1E1B18] hover:text-[#8C4325] hover:underline"
               >
                 {BUSINESS_INFO.email}
               </a>
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
 
         <div className="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-[#1E1B18]/65">
           <p>© {new Date().getFullYear()} {BUSINESS_INFO.name}. Todos los derechos reservados.</p>
-          <p>{BUSINESS_INFO.concept}</p>
+          <p className="font-semibold text-[#8C4325]">{BUSINESS_INFO.concept}</p>
         </div>
       </div>
     </footer>

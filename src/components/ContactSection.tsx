@@ -189,13 +189,13 @@ export const ContactSection: React.FC = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <Mail className="w-4 h-4 text-[#145A36] shrink-0 mt-1" aria-hidden="true" />
+                <Mail className="w-4 h-4 text-[#8C4325] shrink-0 mt-1" aria-hidden="true" />
                 <div>
                   <dt className="text-xs text-[#1E1B18]/60">Correo electrónico</dt>
                   <dd className="font-semibold text-[#1E1B18]">
                     <a
                       href={`mailto:${BUSINESS_INFO.email}`}
-                      className="hover:text-[#145A36] underline decoration-[#145A36]/30 underline-offset-4"
+                      className="hover:text-[#8C4325] underline decoration-[#8C4325]/35 underline-offset-4"
                     >
                       {BUSINESS_INFO.email}
                     </a>
@@ -204,7 +204,7 @@ export const ContactSection: React.FC = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-[#145A36] shrink-0 mt-1" aria-hidden="true" />
+                <MapPin className="w-4 h-4 text-[#8C4325] shrink-0 mt-1" aria-hidden="true" />
                 <div>
                   <dt className="text-xs text-[#1E1B18]/60">Ubicación y cobertura</dt>
                   <dd className="font-semibold text-[#1E1B18]">
@@ -216,7 +216,7 @@ export const ContactSection: React.FC = () => {
           </div>
 
           {/* Right Column: Email Form connected to /api/contact */}
-          <div className="lg:col-span-7 bg-[#E8F5E9]/35 border border-[#1E1B18]/12 rounded-xl p-5 sm:p-8">
+          <div className="lg:col-span-7 bg-[#FBF7F4] border border-[#8C4325]/20 rounded-xl p-5 sm:p-8">
             <form onSubmit={handleSubmit} noValidate className="space-y-4">
               {/* Campo oculto antispam */}
               <div className="hidden" aria-hidden="true">
@@ -320,7 +320,7 @@ export const ContactSection: React.FC = () => {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#145A36] hover:bg-[#1B7547] disabled:opacity-60 text-white text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#145A36]"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#8C4325] hover:bg-[#6F321A] disabled:opacity-60 text-white text-sm font-semibold transition-colors cursor-pointer whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8C4325]"
                 >
                   {status === 'submitting' ? (
                     <>

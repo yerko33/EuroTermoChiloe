@@ -51,9 +51,9 @@ export const AboutSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 border-t lg:border-t-0 lg:border-l border-[#1E1B18]/12 pt-8 lg:pt-0 lg:pl-10">
+          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 border-t lg:border-t-0 lg:border-l border-[#8C4325]/20 pt-8 lg:pt-0 lg:pl-10">
             {PILLARS.map((pillar) => (
-              <div key={pillar.title} className="pb-4 border-b border-[#1E1B18]/10 last:border-b-0">
+              <div key={pillar.title} className="pb-4 border-b border-[#8C4325]/15 last:border-b-0">
                 <h3 className="text-base font-bold text-[#1E1B18]">{pillar.title}</h3>
                 <p className="mt-1.5 text-sm text-[#1E1B18]/75 leading-relaxed">
                   {pillar.description}
